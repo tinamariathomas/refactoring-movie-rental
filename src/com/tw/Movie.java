@@ -36,4 +36,8 @@ public class Movie {
     public double getBaseAmount() {
         return baseAmount;
     }
+
+    public static Movie createChildrensMovie(String title){
+        return new Movie(title,Movie.CHILDRENS,1.5);
+    }
 }

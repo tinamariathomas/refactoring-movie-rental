@@ -12,7 +12,7 @@ public class RentalTest {
 
     @Before
     public void setUp(){
-        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS,1.5); // Factory method makes sense here
+        movie = Movie.createChildrensMovie("Dumb and Dumber");
         rental = new Rental(movie, 50);
     }
 
@@ -24,7 +24,7 @@ public class RentalTest {
 
     @Test
     public void testGetMovie() throws Exception {
-        assertEquals(rental.getMovie(),movie);
+        assertEquals(rental.getMovie(), movie);
     }
 
     @Test
@@ -34,6 +34,6 @@ public class RentalTest {
 
     @Test
     public void testGetFrequentRentalPoints(){
-        assertEquals(rental.getFrequentRentalPoints(),1);
+        assertEquals(rental.getFrequentRentalPoints(), 1);
     }
 }

@@ -9,7 +9,7 @@ public class MovieTest {
     Movie movie;
     @Before
     public void setUp(){
-        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS,1.5);
+        movie = Movie.createChildrensMovie("Dumb and Dumber");
     }
 
     @Test
