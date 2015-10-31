@@ -27,4 +27,9 @@ public class MovieTest {
     public void testGetTitle() throws Exception {
         assertEquals(movie.getTitle(),"Dumb and Dumber");
     }
+
+    @Test
+    public void shouldCheckMoviePriceCode(){
+        assertTrue(movie.isMovieOfPriceCode(Movie.CHILDRENS));
+    }
 }
