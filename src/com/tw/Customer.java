@@ -5,14 +5,14 @@ import java.util.List;
 public class Customer {
 
     private String name;
-    private List<Rental> _rentals = new ArrayList<Rental>();
+    private List<Rental> rentals = new ArrayList<Rental>();
 
     public Customer(String name) {
         this.name = name;
     }
 
     public void addRental(Rental arg) {
-        _rentals.add(arg);
+        rentals.add(arg);
     }
 
     public String getName() {
@@ -24,7 +24,7 @@ public class Customer {
         int frequentRenterPoints = 0;
         String result = "Rental Record for " + getName() + "\n";
 
-        for (Rental each: _rentals) {
+        for (Rental each: rentals) {
             double thisAmount = each.getRentalAmount();
 
             frequentRenterPoints = each.getFrequentRentalPoints();

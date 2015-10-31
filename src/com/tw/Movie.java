@@ -9,9 +9,12 @@ public class Movie {
     private String title;
     private int priceCode;
 
-    public Movie(String title, int priceCode) {
+    private double baseAmount;
+
+    public Movie(String title, int priceCode,double baseAmount) {
         this.title = title;
         this.priceCode = priceCode;
+        this.baseAmount = baseAmount;
     }
 
     public int getPriceCode() {
@@ -28,5 +31,9 @@ public class Movie {
 
     public boolean isMovieOfPriceCode(int newRelease) {
         return getPriceCode()==newRelease;
+    }
+
+    public double getBaseAmount() {
+        return baseAmount;
     }
 }

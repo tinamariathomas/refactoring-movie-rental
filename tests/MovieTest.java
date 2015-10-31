@@ -9,7 +9,7 @@ public class MovieTest {
     Movie movie;
     @Before
     public void setUp(){
-        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS);
+        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS,1.5);
     }
 
     @Test
@@ -26,6 +26,11 @@ public class MovieTest {
     @Test
     public void testGetTitle() throws Exception {
         assertEquals(movie.getTitle(),"Dumb and Dumber");
+    }
+
+    @Test
+    public void testGetBaseAmount() throws Exception {
+        assertEquals(movie.getBaseAmount(),1.5,0);
     }
 
     @Test

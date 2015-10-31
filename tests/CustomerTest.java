@@ -14,7 +14,7 @@ public class CustomerTest {
     @Before
     public void setUp() {
         customer = new Customer("Tina");
-        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS); // Factory method makes sense here
+        movie = new Movie("Dumb and Dumber", Movie.CHILDRENS,1.5); // Factory method makes sense here
         rental = new Rental(movie, 50);
     }
 
