@@ -37,7 +37,14 @@ public class Movie {
         return baseAmount;
     }
 
+
     public static Movie createChildrensMovie(String title){
         return new Movie(title,Movie.CHILDRENS,1.5);
+    }
+    public static Movie createNewRelease(String title){
+        return new Movie(title,Movie.CHILDRENS,0);
+    }
+    public static Movie createRegularMovie(String title){
+        return new Movie(title,Movie.REGULAR,2);
     }
 }
