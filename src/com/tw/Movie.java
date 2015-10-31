@@ -11,7 +11,7 @@ public class Movie {
 
     private double baseAmount;
 
-    public Movie(String title, int priceCode,double baseAmount) {
+    private Movie(String title, int priceCode,double baseAmount) {
         this.title = title;
         this.priceCode = priceCode;
         this.baseAmount = baseAmount;
